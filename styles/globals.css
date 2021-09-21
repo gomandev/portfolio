@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Stick+No+Bills:wght@500&display=swap");
+
 html,
 body {
   padding: 0;
@@ -14,4 +17,35 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.left {
+  flex-basis: 35%;
+}
+
+.right {
+  flex-basis: 65%;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.stick-bills {
+  font-family: "Stick No Bills", sans-serif !important;
+}
+
+.clip {
+  position: relative;
+  clip-path: polygon(0 0, 28% 0, 57% 100%, 0% 100%);
+  object-fit: cover;
+  background-color: transparent;
+  width: 100%;
+}
+
+.svg {
+  position: absolute;
+  top: 11%;
+  left: 0%;
+  width: 750px;
 }

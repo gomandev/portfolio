@@ -1,8 +1,18 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import type { AppProps } from "next/app";
+import store from "../store/config";
+import { Provider } from "react-redux";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+import { MainLayout } from "../components/shared/mainLayout";
+
+function MyApp({ Component, pageProps }: any) {
+  return (
+    <Provider store={store}>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </Provider>
+  );
 }
+
 export default MyApp;
